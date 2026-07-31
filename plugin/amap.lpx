@@ -1,7 +1,7 @@
 #!name = 高德地图
 #!desc = 安全、文明驾驶，安全导航
 #!author = 树先生, RuCu6
-#!icon = 
+#!icon = https://github.com/ishowshu/loon/raw/refs/heads/main/icon/gaode.png
 
 [Rule]
 AND,((URL-REGEX, "^http:\/\/.+\/amdc\/mobileDispatch"), (USER-AGENT, "AMapiPhone*")),REJECT
