@@ -1,7 +1,7 @@
 #!name = 招商银行
 #!desc = 移除开屏广告
 #!author = 树先生
-#!icon = 
+#!icon = https://github.com/ishowshu/loon/raw/refs/heads/main/icon/cmb.png
 
 [Rewrite]
 # 掌上生活开屏广告
