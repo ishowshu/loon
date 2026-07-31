@@ -1,7 +1,7 @@
 #!name = Youtube (Music) Enhance
 #!desc = 适用于 Youtube & Youtube Music
 #!author = Maasea
-#!icon = 
+#!icon = https://github.com/ishowshu/loon/raw/refs/heads/main/icon/youtube.png
 
 [Argument]
 captionLang=select,"zh-Hans","zh-Hant","ja","ko","en","off",tag=字幕翻译语言
