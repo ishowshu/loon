@@ -1,7 +1,7 @@
 #!name = 闲鱼
 #!desc = 移除广告
 #!author = 树先生
-#!icon = 
+#!icon = https://github.com/ishowshu/loon/raw/refs/heads/main/icon/goofish.png
 
 [Rule]
 AND,((URL-REGEX,"^http:\/\/.+\/amdc\/mobileDispatch"),(USER-AGENT,"%E9%97%B2%E9%B1%BC*")),REJECT
