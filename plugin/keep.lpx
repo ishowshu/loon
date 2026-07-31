@@ -1,7 +1,7 @@
 #!name = Keep
 #!desc = 运动健身打卡每一天
 #!author = 树先生
-#!icon = 
+#!icon = https://github.com/ishowshu/loon/raw/refs/heads/main/icon/keep.png
 
 [Rule]
 DOMAIN,hc-ssp.sm.cn,REJECT
