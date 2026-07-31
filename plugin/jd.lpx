@@ -1,7 +1,7 @@
 #!name = 京东
 #!desc = 开屏广告
 #!author = 树先生
-#!icon = 
+#!icon = https://github.com/ishowshu/loon/raw/refs/heads/main/icon/jd.png
 
 
 [Rewrite]
