@@ -1,0 +1,10 @@
+#!name = 铁路12306
+#!desc = 移除开屏广告
+#!author = 树先生
+#!icon = https://github.com/ishowshu/loon/raw/refs/heads/main/icon/12306.png
+
+[Rewrite]
+
+
+[MitM]
+hostname = 
