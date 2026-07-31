@@ -1,7 +1,7 @@
 #!name = 虎扑
 #!desc = 移除广告
 #!author = 树先生
-#!icon = 
+#!icon = https://github.com/ishowshu/loon/raw/refs/heads/main/icon/hupu.png
 
 [Rewrite]
 # 我的页面游戏栏目
