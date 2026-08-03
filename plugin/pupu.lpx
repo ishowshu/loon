@@ -12,7 +12,7 @@
 # 主页实惠卡横幅
 ^https:\/\/j1\.pupuapi\.com\/client\/member_card\/index\/my REJECT
 # 搜索框页面热榜
-^https:\/\/j1\.pupuapi\.com\/client\/marketing\/advertisement\/search_input_ranking reject-dict
+^https:\/\/j1\.pupuapi\.com\/client\/marketing\/advertisement\/hub\/camel\/search_input_ranking reject-dict
 # 朴朴超市订单待收货页右下角悬浮广告
 ^https:\/\/j1\.pupuapi\.com\/client\/assets\/discount\/order reject-dict
 # 购物车页去换购推荐
