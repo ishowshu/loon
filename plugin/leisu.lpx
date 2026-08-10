@@ -19,9 +19,8 @@ DOMAIN, analytics.oceanengine.com, REJECT
 DOMAIN, sdk-config.tanx.com, REJECT
 DOMAIN, adsmartget.datads.cn, REJECT
 
-[Rewrite]
-^https:\/\/s3plus\.meituan\.net\/ leisu* url-and-header reject-dict
-^https:\/\/img1\.360buyimg\.com\/pop\/jfs\/t1 leisu* url-and-header reject-dict
+AND,((USER-AGENT,"leisu*"),(URL-REGEX,"^https:\/\/img1\.360buyimg\.com\/pop\/jfs\/t1")),REJECT-DICT
+AND,((USER-AGENT,"leisu*"),(URL-REGEX,"^https:\/\/s3plus\.meituan\.net\/")),REJECT-DICT
 
 [MitM]
 DOMAINname = s3plus.meituan.net, img1.360buyimg.com
