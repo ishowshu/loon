@@ -23,4 +23,4 @@ AND,((USER-AGENT,"leisu*"),(URL-REGEX,"^https:\/\/img1\.360buyimg\.com\/pop\/jfs
 AND,((USER-AGENT,"leisu*"),(URL-REGEX,"^https:\/\/s3plus\.meituan\.net\/")),REJECT-DICT
 
 [MitM]
-DOMAINname = s3plus.meituan.net, img1.360buyimg.com
+hostname = s3plus.meituan.net, img1.360buyimg.com
