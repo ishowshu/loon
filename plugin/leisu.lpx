@@ -20,14 +20,14 @@ DOMAIN, dsp.ads.umeng.com, REJECT
 DOMAIN, analytics.oceanengine.com, REJECT
 DOMAIN, sdk-config.tanx.com, REJECT
 DOMAIN, adsmartget.datads.cn, REJECT
+DOMAIN, api-access.pangolin-sdk-toutiao-b.com, REJECT
+DOMAIN, api-access.pangolin-sdk-toutiao.com, REJECT
 
 
 AND,((USER-AGENT,"leisu*"),(URL-REGEX,"^https:\/\/img1\.360buyimg\.com\/pop\/jfs\/t1")),REJECT-DICT
 AND,((USER-AGENT,"leisu*"),(URL-REGEX,"^https:\/\/s3plus\.meituan\.net\/")),REJECT-DICT
 AND,((USER-AGENT,"leisu*"),(URL-REGEX,"^https:\/\/p\d+-sign\.douyinpic\.com\/")),REJECT-DICT
 
-#api-access.pangolin-sdk-toutiao.com
-#URL-REGEX,"^https:\/\/api-access\.pangolin-sdk-toutiao\.com\/api\/ad\/union\/sdk\/get_ads\/",REJECT-DICT
 
 [MitM]
 hostname = s3plus.meituan.net, img1.360buyimg.com, p*-sign.douyinpic.com
