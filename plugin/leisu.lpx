@@ -26,7 +26,8 @@ AND,((USER-AGENT,"leisu*"),(URL-REGEX,"^https:\/\/img1\.360buyimg\.com\/pop\/jfs
 AND,((USER-AGENT,"leisu*"),(URL-REGEX,"^https:\/\/s3plus\.meituan\.net\/")),REJECT-DICT
 AND,((USER-AGENT,"leisu*"),(URL-REGEX,"^https:\/\/p\d+-sign\.douyinpic\.com\/")),REJECT-DICT
 
-URL-REGEX,"^https:\/\/api-access\.pangolin-sdk-toutiao\.com\/api\/ad\/union\/sdk\/get_ads\/",REJECT-DICT
+#api-access.pangolin-sdk-toutiao.com
+#URL-REGEX,"^https:\/\/api-access\.pangolin-sdk-toutiao\.com\/api\/ad\/union\/sdk\/get_ads\/",REJECT-DICT
 
 [MitM]
-hostname = s3plus.meituan.net, img1.360buyimg.com, api-access.pangolin-sdk-toutiao.com, p*-sign.douyinpic.com
+hostname = s3plus.meituan.net, img1.360buyimg.com, p*-sign.douyinpic.com
