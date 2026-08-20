@@ -10,7 +10,7 @@ DOMAIN, dsp-tos.mongac.com, REJECT
 DOMAIN, et.tanx.com, REJECT
 DOMAIN-SUFFIX, ubixioe.com, REJECT
 DOMAIN, v.adintl.cn, REJECT
-DOMAIN, inner.shunchangzhixing.com, REJECT
+DOMAIN-SUFFIX, shunchangzhixing.com, REJECT
 DOMAIN, ad-api.adn-plus.com.cn, REJECT
 DOMAIN, res1.hubcloud.com.cn, REJECT
 DOMAIN-SUFFIX, zhangyuyidong.cn, REJECT
