@@ -28,6 +28,7 @@ DOMAIN, tnc3-alisc1.zijieapi.com, REJECT
 DOMAIN, v2mi.gdt.qq.com, REJECT
 DOMAIN-suffix, pglstatp-toutiao.com, REJECT
 DOMAIN, pgdt.ugdtimg.com, REJECT
+DOMAIN, mi.gdt.qq.com, REJECT
 
 AND,((USER-AGENT,"leisu*"),(URL-REGEX,"^https:\/\/img1\.360buyimg\.com\/pop\/jfs\/t1")),REJECT-DICT
 AND,((USER-AGENT,"leisu*"),(URL-REGEX,"^https:\/\/s3plus\.meituan\.net\/")),REJECT-DICT
