@@ -23,7 +23,7 @@ DOMAIN, sdk-config.tanx.com, REJECT
 DOMAIN, adsmartget.datads.cn, REJECT
 DOMAIN, api-access.pangolin-sdk-toutiao-b.com, REJECT
 DOMAIN, api-access.pangolin-sdk-toutiao.com, REJECT
-DOMAIN, api.anythinktech.com, REJECT
+DOMAIN-suffix, anythinktech.com, REJECT
 DOMAIN, tnc3-alisc1.zijieapi.com, REJECT
 DOMAIN, v2mi.gdt.qq.com, REJECT
 DOMAIN-suffix, pglstatp-toutiao.com, REJECT
