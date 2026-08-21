@@ -2,6 +2,7 @@
 #!desc = 移除广告
 #!author = 树先生
 #!icon = https://github.com/ishowshu/loon/raw/refs/heads/main/icon/jixiang.png
+#!date = 2026-08-21 15:00
 
 [Rewrite]
 ^https:\/\/hoapp\.juneyaoair\.com\/data\/index\/getLoadPic reject-dict
