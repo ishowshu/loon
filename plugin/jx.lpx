@@ -4,7 +4,8 @@
 #!icon = https://github.com/ishowshu/loon/raw/refs/heads/main/icon/jixiang.png
 
 [Rewrite]
- response-body-json-jq 
+^https:\/\/hoapp\.juneyaoair\.com\/data\/index\/getLoadPic reject-dict
+^https:\/\/hoapp\.juneyaoair\.com\/data\/index\/getPictureList response-body-json-jq 'if (.objData | any(.picLocation == "POSITION_POP_INDEX" or .picLocation == "POSITION_MY_ADD")) then .objData = [] else . end'
 
 [MitM]
-hostname = 
+hostname = hoapp.juneyaoair.com
