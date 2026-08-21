@@ -1,0 +1,10 @@
+#!name = 吉祥航空
+#!desc = 移除广告
+#!author = 树先生
+#!icon = https://github.com/ishowshu/loon/raw/refs/heads/main/icon/jixiang.png
+
+[Rewrite]
+ response-body-json-jq 
+
+[MitM]
+hostname = 
