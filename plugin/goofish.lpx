@@ -26,6 +26,8 @@ AND,((URL-REGEX,"^http:\/\/.+\/amdc\/mobileDispatch"),(USER-AGENT,"%E9%97%B2%E9%
 ^https:\/\/acs\.m\.goofish\.com\/gw\/mtop\.idle\.trade\.item\.recommend\.render reject-dict
 # 商品详情页顶部搜索框提示词
 ^https:\/\/acs\.m\.goofish\.com\/gw\/mtop\.taobao\.idlemtopsearch\.detailpage\.search\.shade\/ reject-dict
+# 商品详情页底部导航栏
+^https:\/\/acs\.m\.goofish\.com\/gw\/mtop\.taobao\.idle\.item\.recommend\.tab reject-dict
 
 
 # 搜索栏填充词
@@ -37,7 +39,7 @@ AND,((URL-REGEX,"^http:\/\/.+\/amdc\/mobileDispatch"),(USER-AGENT,"%E9%97%B2%E9%
 # 主页关注的人感兴趣推荐
 ^https:\/\/acs\.m\.goofish\.com\/gw\/mtop\.taobao\.idle\.playboy\.recommend\/2\.0 response-body-json-jq '.data.recommends = [] | .data.items = [] | .data.next = false'
 # 商品详情页底部推荐
-^https:\/\/acs\.m\.goofish\.com\/gw\/mtop\.taobao\.idle\.item\.recommend\.list\/ response-body-json-jq '.data.cardList = []'
+#^https:\/\/acs\.m\.goofish\.com\/gw\/mtop\.taobao\.idle\.item\.recommend\.list\/ response-body-json-jq '.data.cardList = []'
 # 首页关注频道常访问的圈子
 ^https:\/\/acs\.m\.goofish\.com\/gw\/mtop\.taobao\.idle\.fun\.follow\.often\.visit response-body-json-jq '.data.sections = []'
 # 主页关注页面圈子新横幅
