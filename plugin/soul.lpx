@@ -1,8 +1,8 @@
 #!name = Soul
 #!desc = 移除广告和精简页面
 #!author = 树先生, 可莉, 奶思, 怎么肥事
-#!tag = 树先生
 #!icon = https://github.com/ishowshu/loon/raw/refs/heads/main/icon/soul.png
+#!date = 2026-08-27 17:20
 
 [Argument]
 soulMatch = switch,true,tag=星球：灵魂匹配,desc=显示/隐藏按钮
