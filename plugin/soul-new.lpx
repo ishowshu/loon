@@ -1,6 +1,7 @@
 #!name = Soul
 #!author = 树先生，怎么肥事, 奶思
 #!desc = 移除广告
+#!icon = https://github.com/ishowshu/loon/raw/refs/heads/main/icon/soul.png
 #!date = 2026-08-29
 
 [Rule]
