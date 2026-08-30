@@ -12,6 +12,17 @@ ip-cidr, 47.56.131.76/32, direct
 ip-cidr, 47.75.72.47/32, direct
 ip-cidr, 3.0.163.78/32, direct
 
+# 官方广告
+domain, ssp.soulapp.cn, reject
+domain, soul-ad.soulapp.cn, reject
+domain, ad-r.soulapp.cn, reject
+
+# 第三方平台广告
+domain, ssp.1rtb.com, reject
+domain, impdsp.meituan.com, reject
+domain, s3plus.meituan.net, reject
+domain, ssp.maplehaze.cn, reject
+
 [Rewrite]
 # 广告下发
 ^https:\/\/ssp\.soulapp\.cn\/api\/q url reject-dict
