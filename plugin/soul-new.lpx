@@ -73,7 +73,7 @@ domain, ssp.maplehaze.cn, reject
 # 派对页面的关注tab中猜你喜欢
 ^https:\/\/chat-live\.soulapp\.cn\/square\/relation\/guideUserList response-body-json-jq '.data.userDTOList = []'
 # 星球页面
-^https:\/\/api-user\.soulapp\.cn\/v6\/planet\/config response-body-json-jq '.data.showRedMind = false | .data.showLuckyBag = false'
+^https:\/\/api-user\.soulapp\.cn\/v6\/planet\/config response-body-json-jq '.data.showRedMind = false | .data.showLuckyBag = false | .data.coreCards |= map(select(.type != 27))'
 # 派对列表中间横幅官方广告
 ^https:\/\/chat-live\.soulapp\.cn\/chatroom\/chatClassifyRoomList response-body-json-jq '.data.positionContentRespList = []'
 # 我的页面tab
