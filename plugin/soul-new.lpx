@@ -2,7 +2,7 @@
 #!author = 树先生，怎么肥事, 奶思
 #!desc = 移除广告
 #!icon = https://github.com/ishowshu/loon/raw/refs/heads/main/icon/soul.png
-#!date = 2026-08-30
+#!date = 2026-09-01
 
 [Rule]
 # 分流走直连，避免影响功能使用
