@@ -2,7 +2,7 @@
 #!desc = 需要卸载重装才能生效
 #!author = 树先生
 #!icon = https://github.com/ishowshu/loon/raw/refs/heads/main/icon/gaode.png
-#!date = 2026-09-02 07:45
+#!date = 2026-09-02 08:58
 
 [Rule]
 AND,((URL-REGEX, "^http:\/\/.+\/amdc\/mobileDispatch"), (USER-AGENT, "AMapiPhone*")),REJECT
