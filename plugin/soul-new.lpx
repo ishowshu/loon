@@ -20,7 +20,7 @@ domain, ad-r.soulapp.cn, reject
 # 第三方平台广告
 domain, ssp.1rtb.com, reject
 domain, impdsp.meituan.com, reject
-domain, s3plus.meituan.net, reject
+#domain, s3plus.meituan.net, reject
 domain, ssp.maplehaze.cn, reject
 
 [Rewrite]
