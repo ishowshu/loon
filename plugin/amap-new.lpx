@@ -2,7 +2,7 @@
 #!desc = 需要卸载重装才能生效
 #!author = 树先生
 #!icon = https://github.com/ishowshu/loon/raw/refs/heads/main/icon/gaode.png
-#!date = 2026-09-02 14:09
+#!date = 2026-09-05 09:52
 
 [Rule]
 AND,((URL-REGEX, "^http:\/\/.+\/amdc\/mobileDispatch"), (USER-AGENT, "AMapiPhone*")),REJECT
@@ -51,7 +51,7 @@ AND,((URL-REGEX, "^http:\/\/.+\/amdc\/mobileDispatch"), (USER-AGENT, "AMapiPhone
 # 首页地图图层推广
 ^https:\/\/m5\.amap\.com\/ws\/faas\/amap-navigation\/main-page-aiqs response-body-json-jq '.data.mapBizList |= map(select(IN(.dataKey; "UserAssetsVirtualCard", "FootPrintNewCityDialog", "PoiRecommendVirtualCard", "PersonalRecommendVirtualCard") | not))'
 # 首页地图顶部横幅通知过滤
-^https:\/\/m5\.amap\.com\/ws\/faas\/amap-navigation\/main-page-assets response-body-json-jq '.data.msgs |= map(select(.is_ad != "1" and (.category | IN(1, 2, 5, 24))))'
+^https:\/\/m5\.amap\.com\/ws\/faas\/amap-navigation\/main-page-assets response-body-json-jq '.data.msgs |= map(select(.category | IN(1, 2, 5, 24)))'
 
 [Script]
 # 打车页面图标菜单
