@@ -2,7 +2,7 @@
 #!desc = 需要卸载重装才能生效
 #!author = 树先生
 #!icon = https://github.com/ishowshu/loon/raw/refs/heads/main/icon/gaode.png
-#!date = 2026-09-17 16:24
+#!date = 2026-09-19 11:41
 
 [Rule]
 AND,((URL-REGEX, "^http:\/\/.+\/amdc\/mobileDispatch"), (USER-AGENT, "AMapiPhone*")),REJECT
@@ -41,6 +41,8 @@ AND,((URL-REGEX, "^http:\/\/.+\/amdc\/mobileDispatch"), (USER-AGENT, "AMapiPhone
 ^https:\/\/m5-zb\.amap\.com\/ws\/boss\/transportation\/diversion\/resource\/bus_only_refresh reject-dict
 # 首页地图顶部横幅通知过滤
 ^https:\/\/m5\.amap\.com\/ws\/faas\/amap-navigation\/main-page-assets reject-dict
+# 打车页右上角悬浮广告
+^https:\/\/m5-zb\.amap\.com\/ws\/promotion-web\/resource reject-dict
 
 # 订单页详情底部广告
 ^https:\/\/m5-zb\.amap\.com\/ws\/promotion-web\/resource response-body-json-jq 'del(.data.banner, .data.popup)'
