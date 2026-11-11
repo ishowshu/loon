@@ -2,6 +2,15 @@
 #!desc = 沉浸式购物体验
 #!author = 树先生
 #!icon = https://github.com/ishowshu/loon/raw/refs/heads/main/icon/pdd.png
+#!date = 2026-11-11 19:28:00
+
+[Rule]
+DOMAIN,ta-a.pinduoduo.com,REJECT
+DOMAIN,ta.pinduoduo.com,REJECT
+DOMAIN,th-a.pinduoduo.com,REJECT
+DOMAIN,th-b.pinduoduo.com,REJECT
+DOMAIN,th.pinduoduo.com,REJECT
+DOMAIN,titan.pinduoduo.com,REJECT
 
 [Rewrite]
 # 开屏广告
@@ -32,7 +41,6 @@
 ^https:\/\/api\.pinduoduo\.com\/api\/growth\/nagato\/app\/index\/gather response-body-json-jq 'del(.newer_index_banner.data)'
 # 物流页面横幅广告
 ^https:\/\/api\.pinduoduo\.com\/order\/\d+-\d+\/shipping response-body-json-jq 'del(.shipping.banner_above_recommend)'
-
 
 [Script]
 # 拼多多首页简化(底部菜单、顶部分类)
