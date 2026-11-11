@@ -1,2 +1,5 @@
 
+[Rewrite]
+request if ${url} ~= /^https:\/\/starplucker\.cyapi\.cn\/v3\/(config\/cypage\/\w+\/conditions|notification\/message_center|operation\/homefeatures)/ then reject_dict(200)
+
 hostname = wrapper.cyapi.cn,api.caiyunapp.com,starplucker.cyapi.cn
