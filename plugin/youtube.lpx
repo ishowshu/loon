@@ -2,7 +2,7 @@
 #!desc = 适用于 YouTube & YouTube Music
 #!author = Maasea
 #!icon = https://github.com/ishowshu/loon/raw/refs/heads/main/icon/youtube.png
-#!date = 2026-11-11 17:04
+#!date = 2026-11-11 18:04
 
 [Argument]
 captionLang=select,"zh-Hans","zh-Hant","ja","ko","en","off",tag=字幕翻译语言
