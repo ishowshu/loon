@@ -43,6 +43,7 @@ IP-CIDR,113.46.225.8/32,REJECT,no-resolve
 # 订单进行页面各种推广
 ^https:\/\/api\.udache\.com\/gulfstream\/passenger-center\/v2\/other\/pInTripLayout response-body-json-jq '.data.order_components |= map(select((.name != "passenger_common_casper") and (.name != "xp-card")))'
 ^https:\/\/api\.udache\.com\/gulfstream\/passenger-center\/v2\/bronze\/pEndTripPaidLayout response-body-json-jq '.data.layout.order |= ["finish-order-01"] | del(."data"."layout"."disorder"."member-growth")'
+^https:\/\/api\.udache\.com\/gulfstream\/passenger-center\/v2\/bronze\/pInTripLayout response-body-json-jq '.data.layout.order |= ["header-card-1", "driver-card-1"]'
 # 订单列表tip提示
 ^https:\/\/common\.diditaxi\.com\.cn\/passenger\/historyV2 response-body-json-jq '.data.orders |= map(del(.guide_bar))'
 
