@@ -11,10 +11,29 @@ blockImmersive=switch,false,tag=屏蔽选段按钮
 blockShorts=switch,false,tag=屏蔽Shorts按钮
 debug=switch,false,tag=启用调试模式
 
+[Rewrite]
+^https:\/\/rr[\w-]+\.googlevideo\.com\/initplayback\? reject-dict
+
 [Script]
-http-response ^https:\/\/youtubei\.googleapis\.com\/(youtubei\/v1\/(browse|next|player|search|reel\/reel_watch_sequence|guide|account\/get_setting|get_watch|log_event|config))(\?(.*))?$ script-path=https://raw.githubusercontent.com/Maasea/sgmodule/master/Script/Youtube/youtube.response.js,tag=protobuf,requires-body=true,binary-body-mode=true,argument=[{captionLang},{blockUpload},{blockImmersive},{blockShorts},{debug}]
-http-request ^https?:\/\/[\w-]+\.googlevideo\.com\/initplayback.+&ack.* script-path=https://raw.githubusercontent.com/Maasea/sgmodule/master/Script/Youtube/youtube.request.js,tag=youtube.request.init,requires-body=true,binary-body-mode=true,argument=[{captionLang}]
-http-request ^https:\/\/youtubei\.googleapis\.com\/youtubei\/v1\/log_event script-path=https://raw.githubusercontent.com/Maasea/sgmodule/master/Script/Youtube/youtube.request.js,tag=youtube.request.log_event,requires-body=true,binary-body-mode=true
+# 信息流
+http-response ^https:\/\/youtubei\.googleapis\.com\/youtubei\/v1\/browse script-path=https://github.com/Maasea/sgmodule/raw/refs/heads/master/Script/Youtube/youtube.response.js, requires-body=true, binary-body-mode=true, timeout=30, tag=YouTube信息流
+
+# 搜索页结果
+http-response ^https:\/\/youtubei\.googleapis\.com\/youtubei\/v1\/search script-path=https://github.com/Maasea/sgmodule/raw/refs/heads/master/Script/Youtube/youtube.response.js, requires-body=true, binary-body-mode=true, timeout=30, tag=YouTube搜索
+
+# 首页顶部导航菜单、软件dock菜单栏（导航会误杀）
+# http-response ^https:\/\/youtubei\.googleapis\.com\/youtubei\/v1\/guide script-path=https://github.com/Maasea/sgmodule/raw/refs/heads/master/Script/Youtube/youtube.response.js, requires-body=true, binary-body-mode=true, timeout=30, tag=YouTube导航
+
+# 获取配置
+http-response ^https:\/\/youtubei\.googleapis\.com\/youtubei\/v1\/account\/get_setting script-path=https://github.com/Maasea/sgmodule/raw/refs/heads/master/Script/Youtube/youtube.response.js, requires-body=true, binary-body-mode=true, timeout=30, tag=YouTube配置
+
+# 播放页
+http-response ^https:\/\/youtubei\.googleapis\.com\/youtubei\/v1\/get_watch script-path=https://github.com/Maasea/sgmodule/raw/refs/heads/master/Script/Youtube/youtube.response.js, requires-body=true, binary-body-mode=true, timeout=30, tag=YouTube播放页
+http-response ^https:\/\/youtubei\.googleapis\.com\/youtubei\/v1\/next script-path=https://github.com/Maasea/sgmodule/raw/refs/heads/master/Script/Youtube/youtube.response.js, requires-body=true, binary-body-mode=true, timeout=30, tag=YouTube播放页next
+
+# 短视频
+http-response ^https:\/\/youtubei\.googleapis\.com\/youtubei\/v1\/player\? script-path=https://github.com/Maasea/sgmodule/raw/refs/heads/master/Script/Youtube/youtube.response.js, requires-body=true, binary-body-mode=true, timeout=30, tag=YouTubePlayer
+http-response ^https:\/\/youtubei\.googleapis\.com\/youtubei\/v1\/reel\/reel_watch_sequence script-path=https://github.com/Maasea/sgmodule/raw/refs/heads/master/Script/Youtube/youtube.response.js, requires-body=true, binary-body-mode=true, timeout=30, tag=YouTube短视频
 
 [MITM]
 hostname = *.googlevideo.com, youtubei.googleapis.com
