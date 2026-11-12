@@ -8,7 +8,6 @@ DOMAIN,abyss.cyapi.cn,REJECT
 DOMAIN,ad.cyapi.cn,REJECT
 
 [Rewrite]
-^https:\/\/biz\.cyapi\.cn\/(p\/v1\/entries|p\/v1\/trial_card\/info|v2\/product) reject-dict
 ^https:\/\/starplucker\.cyapi\.cn\/v3\/(config\/cypage\/\w+\/conditions|notification\/message_center|operation\/homefeatures) reject_dict
 
 [Script]
@@ -17,4 +16,4 @@ http-response ^https:\/\/wrapper\.cyapi\.cn\/v1\/activity\? script-path = https:
 http-response ^https:\/\/wrapper\.cyapi\.cn\/v1\/(nafp\/origin_images|satellite)\? script-path = https://github.com/ishowshu/qx/raw/refs/heads/main/script/caiyun.js, requires-body = true, tag = 移除彩云广告
 
 [MitM]
-hostname = wrapper.cyapi.cn,api.caiyunapp.com,starplucker.cyapi.cn,biz.cyapi.cn
+hostname = wrapper.cyapi.cn,api.caiyunapp.com,starplucker.cyapi.cn
