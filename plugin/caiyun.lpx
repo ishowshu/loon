@@ -1,3 +1,7 @@
+#!name = 彩云天气Pro
+#!desc = 简单屏蔽一些广告
+#!author = 树先生
+#!icon = https://github.com/ishowshu/loon/raw/refs/heads/main/icon/.png
 
 [Rewrite]
 request if ${url} ~= /^https:\/\/starplucker\.cyapi\.cn\/v3\/(config\/cypage\/\w+\/conditions|notification\/message_center|operation\/homefeatures)/ then reject_dict(200)
