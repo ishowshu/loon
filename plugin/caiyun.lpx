@@ -8,7 +8,7 @@ DOMAIN,abyss.cyapi.cn,REJECT
 DOMAIN,ad.cyapi.cn,REJECT
 
 [Rewrite]
-^https:\/\/starplucker\.cyapi\.cn\/v3\/(config\/cypage\/\w+\/conditions|notification\/message_center|operation\/homefeatures) reject_dict
+request if ${url} ~= /^https:\/\/starplucker\.cyapi\.cn\/v3\/(config\/cypage\/\w+\/conditions|notification\/message_center|operation\/homefeatures)/ then reject_dict(200)
 
 [Script]
 http-response ^https:\/\/api\.caiyunapp\.com\/v1\/activity\? script-path = https://github.com/ishowshu/qx/raw/refs/heads/main/script/caiyun.js, requires-body = true, tag = 移除彩云广告
